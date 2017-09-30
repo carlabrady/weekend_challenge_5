@@ -13,11 +13,14 @@
     <title>HomeFinder</title>
 </head>
 <body>
-    <h1>HomeFindr</h1>
-    <main>
+    <main ng-app="myApp">
+        <h1>HomeFindr</h1>
         <section>
+            <button><a href="#!/">Home</a></button>
+            <button><a href="#!/rent">For Rent</a></button>
+            <button><a href="#!/sale">For Sale</a></button>
             <div>
-                <ng-repeat></ng-repeat>
+                <ng-view></ng-view>
             </div>
         </section>
     </main>
