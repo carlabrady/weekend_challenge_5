@@ -1,0 +1,25 @@
+{
+  "name": "weekend_challenge_5",
+  "version": "1.0.0",
+  "description": "- [ ] Create a Full Stack application from the ground up using Angular, Node, and MongoDB - [ ] Work with the data set that we have provided for you - [ ] Use Bootstrap to present the data - [ ] Account for the different data (\"rent\" versus \"cost\") and ensure that this is noted on the display of the information, by listing \"For Rent\" or \"For Sale\" based on which of the two properties that it has. - [ ] User `angular-route` to display the data in multiple views. - [ ] Interact with the server via an Angular service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlabrady/weekend_challenge_5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlabrady/weekend_challenge_5/issues"
+  },
+  "homepage": "https://github.com/carlabrady/weekend_challenge_5#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  }
+}
