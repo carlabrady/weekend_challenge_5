@@ -27,4 +27,17 @@ router.get('/rent', function(req, res){
     })
 });
 
+router.post( '/', function( req, res ){
+    console.log( 'in listing post with:', req.body );
+    var home = new Homes (req.body);
+    home.save( function (err){
+        if(err) {
+            console.log('DB err', err);
+            res.sendStatus(500)
+        } else {
+            res.sendStatus(200);
+        }
+    })//END home save
+}); //end home post
+
 module.exports = router;

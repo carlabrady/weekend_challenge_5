@@ -1,0 +1,19 @@
+<section>
+    <div ng-model="input">
+        <select ng-model="type" ng-dropdown required>        
+            <option ng-option value="rent">Rent</option>
+            <option ng-option value="sell">Sell</option>
+        </select>
+    
+        <div ng-if="type === 'rent'">
+            <p>Rent:$<input type="number" ng-model="ctrl.rentIn"/></p>            
+        </div>
+        <div ng-if="type === 'sell'">
+            <p>Cost:$<input type="number" ng-model="ctrl.costIn"/></p>            
+        </div>
+        
+        <p>Sqft:<input type="number" ng-model="ctrl.sqftIn"/></p>
+        <p>City:<input type="text" ng-model="ctrl.cityIn"/></p>
+    </div>
+    <button ng-click="ctrl.addListing()" >Submit</button>
+</section>

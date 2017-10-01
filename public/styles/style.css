@@ -29,11 +29,14 @@
 }
 
 button {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 a {
     text-decoration:  none;
+    color: black;
 }
 
 .realestate {

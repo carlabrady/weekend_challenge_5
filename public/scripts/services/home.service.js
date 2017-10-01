@@ -31,4 +31,12 @@ myApp.service( 'HomeService', function( $http ){
             self.rentObj.homes = response.data
         });
     }; 
+
+    self.postListing = function(newInfo) {
+        return $http({
+            method: 'POST',
+            url: '/realestate',
+            data: newInfo
+        });//END $http post
+    }
 }); // end service
