@@ -26,6 +26,4 @@ app.use(express.static('public'));
 
 app.use('/realestate', homesRoute);
 
-app.listen(5555, 'localhost', function (req, res) {
-  console.log('listening on 5555');
-});
+app.listen(process.env.PORT || 5555);

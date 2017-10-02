@@ -10,7 +10,6 @@ router.get('/sale', function(req, res){
             console.log('routerGet results:', results);
             res.send(results);
         }
-
     })
 });
 
@@ -23,7 +22,6 @@ router.get('/rent', function(req, res){
             console.log('routerGet results:', results);
             res.send(results);
         }
-
     })
 });
 
